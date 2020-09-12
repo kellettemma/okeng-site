@@ -1,0 +1,259 @@
+html {
+  height: 100%;
+}
+
+body {
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: 'Montserrat',  'Helvetica Neue', Arial, sans-serif;
+  margin: 0;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 1rem 2.5rem;
+  padding-top: 1rem;
+  width: 85%;
+  border-top: 4px solid #193441;
+}
+
+h3 {
+  font-size: 1.6rem;
+  text-transform: uppercase; 
+  color: #193441;
+}
+
+a {
+    cursor:pointer;
+    color: #3E606F;
+    text-decoration: underline;
+}
+
+.home-container {
+  max-width: 1140px;
+    margin-right: auto;
+    margin-left: auto;
+    flex: 1;
+}
+
+.container {
+  margin: 0 2.5rem;
+  flex: 1;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  margin:0 2rem;
+}
+
+nav {
+  margin-left: 10%;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li a {
+  border-bottom: 4px solid transparent;
+  /* font-size: 90%; */
+  font-weight: 700;
+  padding: 0.75em 0;
+  margin: 0 0.5rem;
+  letter-spacing: 1px;
+  color: #193441;
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+nav ul li a:hover, nav ul li a.active {
+  color: #193441;
+  background: #d1e4ed;
+}
+
+.element--hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.logo {
+  background-image: url('../images/logo.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  min-height: 4rem;
+  width: 80%;
+}
+
+.masthead {
+  color: white;
+  background: -webkit-gradient(linear,left top, left bottom,color-stop(0, rgba(57,67,62,.8)),to(rgba(10,20,25,.8))),url(machine.jpg);
+  background: linear-gradient(to bottom,rgba(57,67,62,.8) 0,rgba(10,20,25,.8) 100%),url(../images/machine.jpg);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  min-height: 25rem;
+  display: -webkit-box;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  margin: 0;
+}
+
+.masthead h2 {
+  width: 60%;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 300;
+  border: none;
+}
+
+.btn {
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-weight: 700;
+  font-size: 18px;
+  padding: 20px 40px;
+  color: white;
+  text-decoration: none;
+  border: none;
+}
+
+.btn:focus {
+outline: none;
+}
+
+.btn-primary {
+  background-color: #3E606F;
+  border-color: #3E606F;
+  border-radius: 10rem;
+}
+
+.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+  background-color: #193441 !important;
+  border-color: #193441 !important;
+  box-shadow: 0 0 0 3px #3E606F;
+  color: white;
+}
+
+.customers {
+  display: flex;
+  flex-shrink: unset;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.customers img {
+  width: 120px;
+  margin: 2rem 1rem 4rem;
+  filter: none;
+    -webkit-filter: grayscale(100%);
+    -moz-filter:    grayscale(100%);
+    -ms-filter:     grayscale(100%);
+    -o-filter:      grayscale(100%);
+}
+
+.customers img:hover {
+  filter: none;
+    -webkit-filter: grayscale(0%);
+    -moz-filter:    grayscale(0%);
+    -ms-filter:     grayscale(0%);
+    -o-filter:      grayscale(0%);
+}
+
+.products {
+  display: flex;
+}
+
+.product {
+  margin-right: 2rem;
+}
+
+.product p {
+  margin: 0.5rem 0;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form button {
+  width: 20%;
+  margin: 1rem 0 ;
+}
+
+input[type="text"],
+input[type="email"],
+textarea  {
+  border: 2px solid #abc5d0;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  width: 60%;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus  {
+  outline: none;
+  border: 2px solid #193441;
+}
+
+footer {
+  background-color: #193441;
+  color: white;
+  padding: 25px 0;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+  margin-left:0.25rem;
+}
+
+footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+footer ul li {
+  margin:0 0.5rem;
+}
+
+@media (min-width: 992px) {
+
+  .logo {
+    width: 50%;
+  }
+
+}
