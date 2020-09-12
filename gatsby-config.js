@@ -16,7 +16,9 @@ module.exports = {
     {
       resolve: `gatsby-source-strapi`,
       options: {
-        apiUrl: `http://localhost:1337`,
+        apiURL: process.env.DEPLOY_URL
+          ? "https://okeng.herokuapp.com"
+          : "http://localhost:1337",
         contentTypes: ['article', 'client'],
         queryLimit: 1000
       },
